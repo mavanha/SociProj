@@ -1,0 +1,444 @@
+
+--- summary statistics ---
+         metric      value
+    total users      75904
+    total posts      82385
+timeframe start 2025-04-19
+  timeframe end 2025-10-19
+       duration   6 months
+
+--- platform distribution (data) ---
+           count percentage
+platform                   
+Twitter    24524      29.8%
+Reddit     20741      25.2%
+Instagram  16552      20.1%
+YouTube     9811      11.9%
+TikTok      6590       8.0%
+Facebook    4167       5.1%
+
+--- demographic breakdown (age classes) ---
+age_class
+youth        7584
+teenager    16418
+junior      16586
+senior      25177
+eldest      16620
+
+--- geographic data concentration ---
+location
+North America    28787
+Asia             20820
+Europe           20497
+South America     4074
+Africa            3289
+Unknown           2460
+Oceania           2458
+
+=== task 1: correlation table ===
+engagement          sentiment  pearson_r  p_value
+     likes sentiment_positive     0.0047 0.177016
+     likes sentiment_negative    -0.0064 0.066917
+     likes  sentiment_neutral     0.0012 0.729720
+  comments sentiment_positive     0.0033 0.344696
+  comments sentiment_negative    -0.0048 0.170501
+  comments  sentiment_neutral     0.0011 0.741474
+    shares sentiment_positive     0.0057 0.102160
+    shares sentiment_negative    -0.0078 0.025902
+    shares  sentiment_neutral     0.0015 0.659068
+     views sentiment_positive     0.0054 0.124337
+     views sentiment_negative    -0.0073 0.036254
+     views  sentiment_neutral     0.0014 0.685332
+
+=== task 2: likes needed for 50% P(comment>0) ===
+
+[Tiktok] at different hours since post:
+  hours=0.5: 16 likes
+  hours=1: 16 likes
+  hours=6: 16 likes
+  hours=12: 16 likes
+  hours=24: 16 likes
+
+[Twitter] at different hours since post:
+  hours=0.5: 16 likes
+  hours=1: 16 likes
+  hours=6: 16 likes
+  hours=12: 16 likes
+  hours=24: 16 likes
+
+[Instagram] at different hours since post:
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 15 likes
+
+[Reddit] at different hours since post:
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 15 likes
+
+[Facebook] at different hours since post:
+  hours=0.5: 16 likes
+  hours=1: 16 likes
+  hours=6: 16 likes
+  hours=12: 16 likes
+  hours=24: 16 likes
+
+[Youtube] at different hours since post:
+  hours=0.5: 16 likes
+  hours=1: 16 likes
+  hours=6: 16 likes
+  hours=12: 16 likes
+  hours=24: 16 likes
+
+=== task 3: impact of age & popularity per platform ===
+
+--- likes needed for 50% P(comment>0) by age class (at 12h) ---
+
+[Tiktok]
+  youth: 14 likes needed
+  teenager: 16 likes needed
+  junior: 14 likes needed
+  senior: 18 likes needed
+  eldest: 16 likes needed
+
+[Twitter]
+  youth: 15 likes needed
+  teenager: 15 likes needed
+  junior: 16 likes needed
+  senior: 15 likes needed
+  eldest: 16 likes needed
+
+[Instagram]
+  youth: 15 likes needed
+  teenager: 15 likes needed
+  junior: 16 likes needed
+  senior: 16 likes needed
+  eldest: 15 likes needed
+
+[Reddit]
+  youth: 15 likes needed
+  teenager: 16 likes needed
+  junior: 15 likes needed
+  senior: 15 likes needed
+  eldest: 15 likes needed
+
+[Facebook]
+  youth: 19 likes needed
+  teenager: 17 likes needed
+  junior: 14 likes needed
+  senior: 16 likes needed
+  eldest: 16 likes needed
+
+[Youtube]
+  youth: 15 likes needed
+  teenager: 16 likes needed
+  junior: 16 likes needed
+  senior: 15 likes needed
+  eldest: 16 likes needed
+
+--- likes needed for 50% P(comment>0) by popularity (at 12h) ---
+
+[Tiktok]
+  nano (<1k): 15 likes needed
+  micro (1k-10k): 17 likes needed
+  macro (10k-100k): 15 likes needed
+  mega (>100k): 22 likes needed
+
+[Twitter]
+  nano (<1k): 15 likes needed
+  micro (1k-10k): 15 likes needed
+  macro (10k-100k): 15 likes needed
+  mega (>100k): 12 likes needed
+
+[Instagram]
+  nano (<1k): 15 likes needed
+  micro (1k-10k): 15 likes needed
+  macro (10k-100k): 16 likes needed
+  mega (>100k): 18 likes needed
+
+[Reddit]
+  nano (<1k): 15 likes needed
+  micro (1k-10k): 15 likes needed
+  macro (10k-100k): 14 likes needed
+  mega (>100k): insufficient data
+
+[Facebook]
+  nano (<1k): 16 likes needed
+  micro (1k-10k): 16 likes needed
+  macro (10k-100k): 15 likes needed
+  mega (>100k): never reaches 50%
+
+[Youtube]
+  nano (<1k): 15 likes needed
+  micro (1k-10k): 16 likes needed
+  macro (10k-100k): 15 likes needed
+  mega (>100k): 15 likes needed
+
+=== task 4: high toxicity impact ===
+
+[Tiktok] high tox thresh: 37.10
+  hours=0.5: 17 likes
+  hours=1: 17 likes
+  hours=6: 17 likes
+  hours=12: 17 likes
+  hours=24: 17 likes
+
+[Twitter] high tox thresh: 39.30
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 15 likes
+
+[Instagram] high tox thresh: 37.90
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 15 likes
+
+[Reddit] high tox thresh: 38.50
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 15 likes
+
+[Facebook] high tox thresh: 37.65
+  hours=0.5: 18 likes
+  hours=1: 18 likes
+  hours=6: 18 likes
+  hours=12: 18 likes
+  hours=24: 17 likes
+
+[Youtube] high tox thresh: 39.60
+  hours=0.5: 15 likes
+  hours=1: 15 likes
+  hours=6: 15 likes
+  hours=12: 15 likes
+  hours=24: 16 likes
+
+=== task 5: location impact ===
+
+--- likes needed for 50% P(comment>0) by location (at 12h) ---
+
+[Tiktok]
+  Asia: 16 likes needed
+  South America: 15 likes needed
+  Europe: 17 likes needed
+  North America: 15 likes needed
+  Oceania: 14 likes needed
+  Africa: 21 likes needed
+  Unknown: 18 likes needed
+
+[Twitter]
+  Asia: 15 likes needed
+  South America: 16 likes needed
+  Europe: 16 likes needed
+  North America: 15 likes needed
+  Oceania: 16 likes needed
+  Africa: 15 likes needed
+  Unknown: 16 likes needed
+
+[Instagram]
+  Asia: 16 likes needed
+  South America: 14 likes needed
+  Europe: 15 likes needed
+  North America: 16 likes needed
+  Oceania: 19 likes needed
+  Africa: 16 likes needed
+  Unknown: 16 likes needed
+
+[Reddit]
+  Asia: 15 likes needed
+  South America: 15 likes needed
+  Europe: 14 likes needed
+  North America: 16 likes needed
+  Oceania: 14 likes needed
+  Africa: 18 likes needed
+  Unknown: 16 likes needed
+
+[Facebook]
+  Asia: 15 likes needed
+  South America: 18 likes needed
+  Europe: 17 likes needed
+  North America: 16 likes needed
+  Oceania: 16 likes needed
+  Africa: 13 likes needed
+  Unknown: 19 likes needed
+
+[Youtube]
+  Asia: 16 likes needed
+  South America: 16 likes needed
+  Europe: 15 likes needed
+  North America: 16 likes needed
+  Oceania: 13 likes needed
+  Africa: 17 likes needed
+  Unknown: 15 likes needed
+
+--- task 6: binned posts per platform (stacked chart data) ---
+platform  Facebook  Instagram  Reddit  TikTok  Twitter  YouTube
+post_bin                                                       
+<5            4167      16552   20741    6590    24524     9811
+5-10             0          0       0       0        0        0
+10-15            0          0       0       0        0        0
+15-20            0          0       0       0        0        0
+20-25            0          0       0       0        0        0
+25+              0          0       0       0        0        0
+
+--- task 6: cumulative distribution (A_k) per platform ---
+
+=== TikTok ===
+k (posts) | users with >= k posts
+1    6552
+2      38
+
+=== Twitter ===
+k (posts) | users with >= k posts
+1    23960
+2      551
+3       13
+
+=== Instagram ===
+k (posts) | users with >= k posts
+1    16292
+2      255
+3        5
+
+=== Reddit ===
+k (posts) | users with >= k posts
+1    20313
+2      421
+3        7
+
+=== Facebook ===
+k (posts) | users with >= k posts
+1    4152
+2      15
+
+=== YouTube ===
+k (posts) | users with >= k posts
+1    9724
+2      87
+
+--- task 7: distribution of posts per user by location ---
+post_bin          <5
+location            
+Africa          3289
+Asia           20820
+Europe         20497
+North America  28787
+Oceania         2458
+South America   4074
+Unknown         2460
+
+--- task 8: binned toxic posts per platform (stacked chart data) ---
+platform  Facebook  Instagram  Reddit  TikTok  Twitter  YouTube
+post_bin                                                       
+<5             417       1595    2067     640     2478      997
+5-10             0          0       0       0        0        0
+10-15            0          0       0       0        0        0
+15-20            0          0       0       0        0        0
+20-25            0          0       0       0        0        0
+25+              0          0       0       0        0        0
+
+--- task 8: cumulative distribution (A_k) per platform - high toxicity ---
+
+=== TikTok (high toxicity) ===
+k (posts) | users with >= k posts
+1    640
+
+=== Twitter (high toxicity) ===
+k (posts) | users with >= k posts
+1    2475
+2       3
+
+=== Instagram (high toxicity) ===
+k (posts) | users with >= k posts
+1    1593
+2       2
+
+=== Reddit (high toxicity) ===
+k (posts) | users with >= k posts
+1    2062
+2       5
+
+=== Facebook (high toxicity) ===
+k (posts) | users with >= k posts
+1    417
+
+=== YouTube (high toxicity) ===
+k (posts) | users with >= k posts
+1    994
+2      3
+
+--- task 9: high-engagement users vs overall ---
+  avg followers (high-eng): 87937 vs overall: 21069
+  avg account age (high-eng): 1850 vs overall: 1845
+  avg toxicity (high-eng): 23.27 vs overall: 23.78
+  positive sentiment (high-eng): 0.433 vs overall: 0.423
+
+--- task 9: binned viral posts per platform (stacked chart data) ---
+platform  Facebook  Instagram  Reddit  TikTok  Twitter  YouTube
+post_bin                                                       
+<5            1053       4721    1969    2011     4942     3661
+5-10             0          0       0       0        0        0
+10-15            0          0       0       0        0        0
+15-20            0          0       0       0        0        0
+20-25            0          0       0       0        0        0
+25+              0          0       0       0        0        0
+
+--- task 9: cumulative distribution (A_k) per platform - high engagement ---
+
+=== TikTok (high engagement) ===
+k (posts) | users with >= k posts
+1    2008
+2       3
+
+=== Twitter (high engagement) ===
+k (posts) | users with >= k posts
+1    4917
+2      25
+
+=== Instagram (high engagement) ===
+k (posts) | users with >= k posts
+1    4700
+2      21
+
+=== Reddit (high engagement) ===
+k (posts) | users with >= k posts
+1    1968
+2       1
+
+=== Facebook (high engagement) ===
+k (posts) | users with >= k posts
+1    1053
+
+=== YouTube (high engagement) ===
+k (posts) | users with >= k posts
+1    3648
+2      13
+
+--- task 10a: propagation speed (posts per hour) by platform ---
+ platform   mean    std  median
+ Facebook 0.0055 0.0105  0.0011
+Instagram 0.0123 0.1160  0.0008
+   Reddit 0.0188 0.2425  0.0008
+   TikTok 0.0016 0.0020  0.0007
+  Twitter 0.0182 0.2992  0.0008
+  YouTube 0.0042 0.0227  0.0008
+
+--- task 10b: propagation speed (avg engagement/hour per user) by platform ---
+ platform   mean     std  median
+ Facebook  54.28  876.45    0.33
+Instagram  54.23  699.57    0.45
+   Reddit   5.42   84.06    0.02
+   TikTok  70.25  656.78    0.46
+  Twitter  37.01  794.00    0.13
+  YouTube 210.24 4606.51    0.93
+
+analysis complete. all figures saved to: figures/
